@@ -14,34 +14,34 @@ The following insights are expected from this project.
 
 # Feature Analysis
 
-EmpNumber-Unique ID number of employee
-Age - Age of the employee
-Gender - Gender of the employee
-EducationBackground - Educatiocation background of the employee
-MaritalStatus - Married,unmarries or divorced
-EmpDepartment - The department of the employeee
-EmpJobRole-Job role of the employee(Sales executive,Developer etc)
-BusinessTravelFrequency - If business travelling there,how frequent it is ?
-DistanceFromHome - Distance of employee home to company
-EmpEducationLevel -Education level means is highest education level of the employee
-EmpEnvironmentSatisfaction - Working environmrent Satisfaction rating of employees
-EmpHourlyRate-Hourly rate he is receiving
-EmpJobInvolvement - Involment in job in a scale of 4
-EmpJobLevel - Job level of employees in a scale of 4
-EmpJobSatisfaction- Satisfaction of employees in thier job
-numCompaniesWorked - Number of company worked previously
-OverTime - Overtime is there or not??
-EmpLastSalaryHikePercent - Last salary hike percentage of employees
-EmpRelationshipSatisfaction - Satisfaction with employer relationship in scale of 4
-TotalWorkExperienceInYears - Total work experience in years
-TrainingTimesLastYear - No of trainings attented last year
-EmpWorkLifeBalance - Worklife balance of employees in a ring of 4
-ExperienceYearsAtThisCompany -No of years experienccce in the current company
-ExperienceYearsInCurrentRole - No of years experienccce in the currentjob role
-YearsSinceLastPromotion - Last promtion year of employees
-YearsWithCurrManager -No of years with the current manager
-Attrition - employee left the company or not
-PerformanceRating -Target column is Performance rating of the employees (2-low,3-Good,4-High)
+- EmpNumber-Unique ID number of employee
+- Age - Age of the employee
+- Gender - Gender of the employee
+- EducationBackground - Educatiocation background of the employee
+- MaritalStatus - Married,unmarries or divorced
+- EmpDepartment - The department of the employeee
+- EmpJobRole-Job role of the employee(Sales executive,Developer etc)
+- BusinessTravelFrequency - If business travelling there,how frequent it is ?
+- DistanceFromHome - Distance of employee home to company
+- EmpEducationLevel -Education level means is highest education level of the employee
+- EmpEnvironmentSatisfaction - Working environmrent Satisfaction rating of employees
+- EmpHourlyRate-Hourly rate he is receiving
+- EmpJobInvolvement - Involment in job in a scale of 4
+- EmpJobLevel - Job level of employees in a scale of 4
+- EmpJobSatisfaction- Satisfaction of employees in thier job
+- numCompaniesWorked - Number of company worked previously
+- OverTime - Overtime is there or not??
+- EmpLastSalaryHikePercent - Last salary hike percentage of employees
+- EmpRelationshipSatisfaction - Satisfaction with employer relationship in scale of 4
+- TotalWorkExperienceInYears - Total work experience in years
+- TrainingTimesLastYear - No of trainings attented last year
+- EmpWorkLifeBalance - Worklife balance of employees in a ring of 4
+- ExperienceYearsAtThisCompany -No of years experienccce in the current company
+- ExperienceYearsInCurrentRole - No of years experienccce in the currentjob role
+- YearsSinceLastPromotion - Last promtion year of employees
+- YearsWithCurrManager -No of years with the current manager
+- Attrition - employee left the company or not
+- PerformanceRating -Target column is Performance rating of the employees (2-low,3-Good,4-High)
 
 ## PROJECT SUMMARY
 
@@ -90,7 +90,7 @@ Min Max scaler - Min Max scaler is sclaing technique that scales all the data fe
 Data Balancing -
 SMOTE() - It is an oversampling technique aims to balance class distribution by randomly increasing minority class examples by replicating them.Our data is highly imbalanced (72% :17% :11%) and any model without balancing would be a dump model..For balancing the data i used SMOTE() oversampling technique...
 
-Model Creation
+# Model Creation
 In the model building part,
 
 Evaluation Metrics-
@@ -107,12 +107,17 @@ Catboost Classifier- It is a boosting supervised machine learning algorthm mostl
 XGB and Gradient Boosting - These are another boosting algorithms used for model building..Both the both models give good result of 92%
 
 For hyper paramtertuning i used
-GridSearch CV-(is the process of performing hyperparameter tuning in order to determine the optimal values for a given model.)
-Kfold Cross validation-(It is data partitioning strategy) It really helps to avoid overfitting problem and helps to build the model is a generalized one.
-Tried but Failed !!!!*
 
-For hyper parameter tuning i tried Randomized SesrchCV but result was not upto the mark...
-Models like decsion tree,logistic regression and SVM also didnot give good results
-Unsupervised model of PCA is also tried ,result was poor and it was not addressed the relevent features
-Also tried Hard outlier handling and square root tranformation,but it resulted very poor model..
-At first Plotly and hvplots libraries are used but due to file size issue changed to Seaborn and Matplotlib libraries
+GridSearch CV-(is the process of performing hyperparameter tuning in order to determine the optimal values for a given model.)
+
+Kfold Cross validation-(It is data partitioning strategy) It really helps to avoid overfitting problem and helps to build the model is a generalized one.
+
+
+
+ # Tried but Failed !!!!*
+
+- For hyper parameter tuning i tried Randomized SesrchCV but result was not upto the mark...
+- Models like decsion tree,logistic regression and SVM also didnot give good results
+- Unsupervised model of PCA is also tried ,result was poor and it was not addressed the relevent features
+- Also tried Hard outlier handling and square root tranformation,but it resulted very poor model..
+- At first Plotly and hvplots libraries are used but due to file size issue changed to Seaborn and Matplotlib libraries
